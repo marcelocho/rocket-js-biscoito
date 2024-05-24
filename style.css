@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(to top right, #190361 0%, #bb00ff 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.hide {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.fechado {
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 0 20px 50px #000000cc;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.fechado button {
+  background: white;
+  border: none;
+}
+
+.fechado button:hover {
+  animation: biscoito 0.2s infinite alternate;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: #34355b;
+  margin-bottom: 1.4rem;
+  max-width: 26rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0%;
+  color: #34355b;
+  margin-bottom: 2rem;
+}
+
+.aberto {
+  background: white;
+  box-shadow: 0 20px 50px #000000cc;
+  padding: 4.8rem 6.4rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.aberto h1 {
+  max-width: 30rem;
+  margin-bottom: 1.7rem;
+}
+.aberto p {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+  background: #e4edf1;
+  max-width: 30rem;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  margin-bottom: 1.7rem;
+  animation: texto 2s ease;
+}
+
+.aberto img {
+  display: block;
+  margin-bottom: 1.7rem;
+}
+
+.aberto button {
+  background: #ff9500;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 4px;
+}
+
+.aberto button:hover {
+  background: #a0620b;
+  transition: 0.3s;
+}
+
+@keyframes texto {
+  from {
+    transform: translateY(150%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes biscoito {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
